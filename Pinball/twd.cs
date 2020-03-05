@@ -17,11 +17,8 @@ namespace Pinball
         public twd()
         {
             InitializeComponent();
-
-            var geh = Path.GetFullPath(Application.ExecutablePath);
-            geh = geh.Replace(Path.GetFileName(Application.ExecutablePath), "");
-
-            var browser = new ChromiumWebBrowser(geh + "\\html\\twd.html");
+            string path = Path.GetDirectoryName(Application.ExecutablePath) + "\\html\\twd.html";
+            var browser = new ChromiumWebBrowser(path);
             panel1.Controls.Add(browser);
         }
     }

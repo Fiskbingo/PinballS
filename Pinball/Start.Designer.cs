@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
@@ -40,10 +41,10 @@
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.richTextBox1.Font = new System.Drawing.Font("Wide Latin", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.DarkSalmon;
-            this.richTextBox1.Location = new System.Drawing.Point(229, 173);
+            this.richTextBox1.Location = new System.Drawing.Point(712, 531);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(1126, 636);
+            this.richTextBox1.Size = new System.Drawing.Size(392, 495);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Welcome!\n\nEasy pinball tips for competitive play!\n\nBrought to you by AAM\n\n\n";
             // 
@@ -58,6 +59,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.richTextBox1);
             this.Name = "Start";
             this.Size = new System.Drawing.Size(1785, 992);

@@ -17,10 +17,8 @@ namespace Pinball
         public batman66()
         {
             InitializeComponent();
-            var geh = Path.GetFullPath(Application.ExecutablePath);
-            geh = geh.Replace(Path.GetFileName(Application.ExecutablePath), "");
-
-            var browser = new ChromiumWebBrowser(geh + "\\html\\batman.html");
+            string path = Path.GetDirectoryName(Application.ExecutablePath) + "\\html\\batman.html";
+            var browser = new ChromiumWebBrowser(path);
             panel1.Controls.Add(browser);
         }
     }
