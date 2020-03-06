@@ -21,6 +21,7 @@ namespace Pinball
         private about about1;
         private got got1;
         private tom tom1;
+        private totem totem1;
 
         public Form1()
         {
@@ -34,6 +35,7 @@ namespace Pinball
             about1 = new about();
             got1 = new got();
             tom1 = new tom();
+            totem1 = new totem();
 
             comboBox1.Items.Add("Alien");
             comboBox1.Items.Add("Batman '66");
@@ -42,6 +44,7 @@ namespace Pinball
             comboBox1.Items.Add("Game of Thrones");
             comboBox1.Items.Add("Theatre of Magic");
             comboBox1.Items.Add("The Walking Dead");
+            comboBox1.Items.Add("Totem");
 
             this.panel3.Controls.Add(start1);
             this.panel3.Controls.Add(alien1);
@@ -52,6 +55,7 @@ namespace Pinball
             this.panel3.Controls.Add(about1);
             this.panel3.Controls.Add(got1);
             this.panel3.Controls.Add(tom1);
+            this.panel3.Controls.Add(totem1);
 
             start1.BringToFront();
         }
@@ -93,6 +97,11 @@ namespace Pinball
             else if(comboBox1.Text =="Theatre of Magic")
             {
                 tom1.BringToFront();
+            }
+
+            else if(comboBox1.Text == "Totem")
+            {
+                totem1.BringToFront();
             }
 
             else 

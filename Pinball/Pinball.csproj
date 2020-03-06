@@ -151,6 +151,12 @@
     <Compile Include="tom.Designer.cs">
       <DependentUpon>tom.cs</DependentUpon>
     </Compile>
+    <Compile Include="totem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="totem.Designer.cs">
+      <DependentUpon>totem.cs</DependentUpon>
+    </Compile>
     <Compile Include="twd.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     <EmbeddedResource Include="tom.resx">
       <DependentUpon>tom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="totem.resx">
+      <DependentUpon>totem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="twd.resx">
       <DependentUpon>twd.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +241,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="html\drwho.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\totem.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="html\twd.html">
